@@ -1,0 +1,598 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #eeeeee;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+/* =========================================
+   RESUME CONTAINER
+========================================= */
+
+.resume {
+
+    width: 1080px;
+
+    max-width: 95%;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.main-content {
+
+    display: flex;
+
+    min-height: 510px;
+
+    padding: 55px;
+
+}
+
+
+/* =========================================
+   PHOTO SECTION
+========================================= */
+
+.photo-section {
+
+    width: 42%;
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: center;
+
+}
+
+
+/* =========================================
+   PROFILE IMAGE
+========================================= */
+
+.photo-section img {
+
+    width: 345px;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+/* =========================================
+   INFORMATION SECTION
+========================================= */
+
+.information {
+
+    width: 58%;
+
+    padding-left: 20px;
+
+    padding-top: 5px;
+
+}
+
+
+/* =========================================
+   HELLO LABEL
+========================================= */
+
+.hello {
+
+    display: inline-block;
+
+    position: relative;
+
+    background-color: #20c77a;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    padding: 7px 13px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* Small triangle under HELLO */
+
+.hello::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -8px;
+
+    border-top: 8px solid #20c77a;
+
+    border-right: 8px solid transparent;
+
+}
+
+
+/* =========================================
+   NAME
+========================================= */
+
+.information h1 {
+
+    font-size: 39px;
+
+    font-weight: 300;
+
+    color: #555d6b;
+
+    margin-bottom: 4px;
+
+    line-height: 1.2;
+
+}
+
+
+.information h1 strong {
+
+    font-weight: 700;
+
+    color: #3e4654;
+
+}
+
+
+/* =========================================
+   PROFESSION
+========================================= */
+
+.information h2 {
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    color: #777777;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================================
+   HORIZONTAL LINE
+========================================= */
+
+.line {
+
+    width: 100%;
+
+    height: 1px;
+
+    background-color: #eeeeee;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.details {
+
+    width: 100%;
+
+}
+
+
+/* =========================================
+   DETAIL ROW
+========================================= */
+
+.detail-row {
+
+    display: grid;
+
+    grid-template-columns: 145px 1fr;
+
+    margin-bottom: 17px;
+
+}
+
+
+/* =========================================
+   DETAIL TITLE
+========================================= */
+
+.detail-title {
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    color: #444444;
+
+}
+
+
+/* =========================================
+   DETAIL VALUE
+========================================= */
+
+.detail-value {
+
+    font-size: 14px;
+
+    color: #b2b2b2;
+
+}
+
+
+/* =========================================
+   EMAIL
+========================================= */
+
+.detail-value a {
+
+    color: #b2b2b2;
+
+    text-decoration: none;
+
+}
+
+
+.detail-value a:hover {
+
+    color: #20c77a;
+
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.status {
+
+    display: inline-block;
+
+    background-color: #20c77a;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    padding: 5px 12px;
+
+}
+
+
+/* =========================================
+   SOCIAL BAR
+========================================= */
+
+.social-bar {
+
+    height: 98px;
+
+    background-color: #12cf78;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 65px;
+
+}
+
+
+/* =========================================
+   SOCIAL LINKS
+========================================= */
+
+.social-bar a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    transition: transform 0.2s ease;
+
+}
+
+
+.social-bar a:hover {
+
+    transform: translateY(-4px);
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .resume {
+
+        max-width: 95%;
+
+    }
+
+
+    .main-content {
+
+        padding: 40px;
+
+    }
+
+
+    .photo-section img {
+
+        width: 280px;
+
+        height: 340px;
+
+    }
+
+
+    .information h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .social-bar {
+
+        gap: 45px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+
+        display: block;
+
+        background-color: white;
+
+    }
+
+
+    .resume {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        box-shadow: none;
+
+    }
+
+
+    /* Stack image and information */
+
+    .main-content {
+
+        display: flex;
+
+        flex-direction: column;
+
+        padding: 30px 20px;
+
+    }
+
+
+    /* Image */
+
+    .photo-section {
+
+        width: 100%;
+
+        justify-content: center;
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .photo-section img {
+
+        width: 250px;
+
+        height: 290px;
+
+    }
+
+
+    /* Information */
+
+    .information {
+
+        width: 100%;
+
+        padding-left: 0;
+
+        text-align: left;
+
+    }
+
+
+    .information h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .information h2 {
+
+        font-size: 16px;
+
+    }
+
+
+    /* Details */
+
+    .detail-row {
+
+        grid-template-columns: 110px 1fr;
+
+        margin-bottom: 15px;
+
+    }
+
+
+    /* Social bar */
+
+    .social-bar {
+
+        height: auto;
+
+        min-height: 90px;
+
+        gap: 30px;
+
+        padding: 25px 15px;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .social-bar a {
+
+        font-size: 20px;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 430px) {
+
+    .main-content {
+
+        padding: 25px 15px;
+
+    }
+
+
+    .photo-section img {
+
+        width: 220px;
+
+        height: 270px;
+
+    }
+
+
+    .information h1 {
+
+        font-size: 27px;
+
+    }
+
+
+    .information h2 {
+
+        font-size: 15px;
+
+    }
+
+
+    .detail-row {
+
+        grid-template-columns: 100px 1fr;
+
+    }
+
+
+    .detail-title {
+
+        font-size: 11px;
+
+    }
+
+
+    .detail-value {
+
+        font-size: 13px;
+
+    }
+
+
+    .social-bar {
+
+        gap: 25px;
+
+    }
+
+}
+@media (max-width: 600px) {
+
+}
